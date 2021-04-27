@@ -1,0 +1,8 @@
+{
+  "pronósticoDelTiempo": {
+    "alerta de tormenta": false,
+    "pronóstico de lluvia": 10,
+    "temperatura": "frío"
+  },
+  "nombre": "Alejandro"
+}

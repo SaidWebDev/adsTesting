@@ -1,0 +1,8 @@
+{
+  "pronósticoDelTiempo": {
+    "alerta de tormenta": true,
+    "pronóstico de lluvia": 100,
+    "temperatura": "frío"
+  },
+  "nombre": "Marta"
+}

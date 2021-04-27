@@ -19,7 +19,7 @@
     <decision id="node_1" name="Recomendación meteorológica">
         <description>Cree una recomendación basada en las características meteorológicas.</description>
         <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
                 <input bomType="PronósticoDelTiempo" collection="false" name="Pronóstico del tiempo"/>
                 <output bomType="java.lang.String" collection="false" name="Recomendación meteorológica"/>
                 <rule defaultRule="false" href="node_1/%20regla%20de%20alerta%20de%20tormenta.drl" kind="BusinessRule" name=" regla de alerta de tormenta"/>

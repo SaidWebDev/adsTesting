@@ -35,7 +35,7 @@
                 <Condition>
                     <Expression>
                         <Param><![CDATA[0]]></Param>
-                        <Param><![CDATA[10]]></Param>
+                        <Param><![CDATA[20]]></Param>
                     </Expression>
                     <Partition DefId="C1">
                         <Condition>
@@ -54,8 +54,8 @@
                 </Condition>
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[10]]></Param>
-                        <Param><![CDATA[15]]></Param>
+                        <Param><![CDATA[0]]></Param>
+                        <Param><![CDATA[20]]></Param>
                     </Expression>
                     <Partition DefId="C1">
                         <Condition>
@@ -74,7 +74,7 @@
                 </Condition>
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[15]]></Param>
+                        <Param><![CDATA[0]]></Param>
                         <Param><![CDATA[20]]></Param>
                     </Expression>
                     <Partition DefId="C1">
@@ -97,20 +97,13 @@
                         <Param><![CDATA[20]]></Param>
                         <Param><![CDATA[80]]></Param>
                     </Expression>
-                    <Partition DefId="C1">
-                        <Condition>
+                    <ActionSet>
+                        <Action DefId="A0">
                             <Expression>
-                                <Param/>
+                                <Param><![CDATA["Se prevé un día nublado. ¡Recuerda llevar paraguas!"]]></Param>
                             </Expression>
-                            <ActionSet>
-                                <Action DefId="A0">
-                                    <Expression>
-                                        <Param><![CDATA["Se prevé un día nublado. ¡Recuerda llevar paraguas!"]]></Param>
-                                    </Expression>
-                                </Action>
-                            </ActionSet>
-                        </Condition>
-                    </Partition>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression>
