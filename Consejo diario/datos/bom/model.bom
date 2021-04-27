@@ -1,0 +1,46 @@
+
+
+public class PronósticoDelTiempo
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Pronóstico del tiempo"
+        property "de.generated" "true"
+{
+    public boolean alertaDeTormenta
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "alerta de tormenta"
+                property update "true";
+    public java.lang.Long pronósticoDeLluvia
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "pronóstico de lluvia"
+                property update "true";
+    public Temperatura temperatura
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "temperatura"
+                property update "true";
+    public PronósticoDelTiempo(boolean alertaDeTormenta, java.lang.Long pronósticoDeLluvia, Temperatura temperatura)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public PronósticoDelTiempo()
+                property "dataio.default" "true";
+}
+
+public class Temperatura
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "temperatura"
+        property "de.generated" "true"
+{
+    domain {static caliente, static cálido, static frío}
+    public static final readonly Temperatura caliente
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "caliente";
+    public static final readonly Temperatura cálido
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "cálido";
+    public static final readonly Temperatura frío
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "frío";
+}
+

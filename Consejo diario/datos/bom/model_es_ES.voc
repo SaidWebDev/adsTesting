@@ -1,0 +1,30 @@
+
+# Term: Pronóstico del tiempo
+@Pronóstico\ del\ tiempo#gender = MALE
+
+# Term: pronóstico de lluvia
+@pronóstico\ de\ lluvia#gender = MALE
+
+# PronósticoDelTiempo
+PronósticoDelTiempo#concept.label = Pronóstico del tiempo
+PronósticoDelTiempo.PronósticoDelTiempo(boolean,java.lang.Long,Temperatura)#phrase.navigation = un nuevo {Pronóstico del tiempo} en que {0, alerta de tormenta} {1, pronóstico de lluvia} {2, temperatura}
+PronósticoDelTiempo.alertaDeTormenta#phrase.action[0] = {this} estará alerta de tormenta solo si {alerta de tormenta}
+PronósticoDelTiempo.alertaDeTormenta#phrase.action[1] = cambiar a {alerta de tormenta} el hecho de que {this} es alerta de tormenta
+PronósticoDelTiempo.alertaDeTormenta#phrase.action[1].deprecated = true
+PronósticoDelTiempo.alertaDeTormenta#phrase.navigation = {this} es alerta de tormenta
+PronósticoDelTiempo.alertaDeTormenta#phrase.negative_predicate = {this} no esta alerta de tormenta
+PronósticoDelTiempo.alertaDeTormenta#phrase.negative_predicate_setter = {this} no estará alerta de tormenta
+PronósticoDelTiempo.alertaDeTormenta#phrase.positive_predicate_setter = {this} estará alerta de tormenta
+PronósticoDelTiempo.pronósticoDeLluvia#phrase.action = cambiar el pronóstico de lluvia {this,PARTITIVE_ARTICLE} a {pronóstico de lluvia}
+PronósticoDelTiempo.pronósticoDeLluvia#phrase.addition_setter = añadir {pronóstico de lluvia} a el pronóstico de lluvia {this,PARTITIVE_ARTICLE}
+PronósticoDelTiempo.pronósticoDeLluvia#phrase.navigation = {pronóstico de lluvia} {this,PARTITIVE_ARTICLE}
+PronósticoDelTiempo.pronósticoDeLluvia#phrase.subtraction_setter = sustraer {pronóstico de lluvia} de el pronóstico de lluvia {this,PARTITIVE_ARTICLE}
+PronósticoDelTiempo.temperatura#phrase.action = cambiar la temperatura {this,PARTITIVE_ARTICLE} a {temperatura}
+PronósticoDelTiempo.temperatura#phrase.clearer = borrar la temperatura{this,PARTITIVE_ARTICLE}
+PronósticoDelTiempo.temperatura#phrase.navigation = {temperatura} {this,PARTITIVE_ARTICLE}
+
+# Temperatura
+Temperatura#concept.label = temperatura
+Temperatura.caliente#instance.label = caliente
+Temperatura.cálido#instance.label = cálido
+Temperatura.frío#instance.label = frío
