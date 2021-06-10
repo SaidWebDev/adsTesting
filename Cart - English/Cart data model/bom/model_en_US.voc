@@ -1,0 +1,31 @@
+
+# Feeling
+Feeling#concept.documentation = feeling
+Feeling#concept.label = feeling
+Feeling.badQuality#instance.label = bad quality
+Feeling.goToAnotherShop#instance.label = go to another shop
+Feeling.tooExpensive#instance.label = too expensive
+Feeling.whatIExpect#instance.label = what I expect
+
+# Item
+Item#concept.label = item
+Item.Item(java.lang.String,double,double)#phrase.navigation = a new {item} where {0, name} {1, quantity} {2, price}
+Item.name#phrase.action = set the name of {this} to {name}
+Item.name#phrase.navigation = {name} of {this}
+Item.neuesAttribut#phrase.action = set the quantity of {this} to {quantity}
+Item.neuesAttribut#phrase.addition_setter = add {quantity} to the quantity of {this}
+Item.neuesAttribut#phrase.navigation = {quantity} of {this}
+Item.neuesAttribut#phrase.subtraction_setter = subtract {quantity} from the quantity of {this}
+Item.price#phrase.action = set the price of {this} to {price}
+Item.price#phrase.addition_setter = add {price} to the price of {this}
+Item.price#phrase.navigation = {price} of {this}
+Item.price#phrase.subtraction_setter = subtract {price} from the price of {this}
+
+# ShoppingCart
+ShoppingCart#concept.label = shopping cart
+ShoppingCart.ShoppingCart(java.util.List)#phrase.navigation = a new {shopping cart} where {0, item}
+ShoppingCart.addTo_items(Item)#phrase.action = add {0} to the items of {this}
+ShoppingCart.clear_items()#phrase.action = clear the items of {this}
+ShoppingCart.items#phrase.action = set the items of {this} to {item}
+ShoppingCart.items#phrase.navigation = {item} of {this}
+ShoppingCart.removeFrom_items(Item)#phrase.action = remove {0} from the items of {this}

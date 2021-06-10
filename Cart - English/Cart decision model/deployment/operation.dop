@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Cart decision model">
+  <name>cartDecisionModel</name>
+  <uuid>5a67a764-06a0-41f6-a536-8b464dc30a07</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#f30c1aa6-74b5-46a1-a486-e5cb96e59247"/>
+  <targetRuleProject href="../../Cart%20decision%20model#a2020fdc-81fb-47c8-a3f3-277964cbddd8"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

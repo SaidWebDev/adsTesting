@@ -1,0 +1,26 @@
+{
+  "myShopping": {
+    "items": [
+      {
+        "name": "butter",
+        "quantity": 2,
+        "price": 2.53
+      },
+      {
+        "name": "flour",
+        "quantity": 4,
+        "price": 1.12
+      },
+      {
+        "name": "eggs",
+        "quantity": 3,
+        "price": 2.99
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "price": 1.15
+      }
+    ]
+  }
+}

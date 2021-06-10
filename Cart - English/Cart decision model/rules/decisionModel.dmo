@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>f30c1aa6-74b5-46a1-a486-e5cb96e59247</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="my shopping">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="ShoppingCart" collection="false" name="my shopping"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="my shopping" typeRef="ShoppingCart"/>
+    </inputData>
+    <decision id="node_1" name="total">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="ShoppingCart" collection="false" name="my shopping"/>
+                <output bomType="java.lang.Double" collection="false" name="total"/>
+                <rule defaultRule="false" href="node_1/Total.drl" kind="BusinessRule" name="Total"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="total" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="feeling on shopping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Double" collection="false" name="total"/>
+                <output bomType="Feeling" collection="true" name="feeling on shopping"/>
+                <rule defaultRule="false" href="node_2/Init.drl" kind="BusinessRule" name="Init"/>
+                <rule defaultRule="false" href="node_2/DT%20feeling.dmt" kind="DecisionTable" name="DT feeling"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="feeling on shopping" typeRef="Feeling[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_3" name="name">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="ShoppingCart" collection="false" name="my shopping"/>
+                <output bomType="java.lang.String" collection="false" name="name"/>
+                <rule defaultRule="false" href="node_3/Name.drl" kind="BusinessRule" name="Name"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="name" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
