@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Sturmregel</name>
+  <uuid>9cad0e72-b89d-4b0b-aeb8-cf28c814250c</uuid>
+  <locale>de_DE</locale>
+  <definition><![CDATA[wenn 
+    Wetter ist Sturmalarm 
+dann 
+    setze Entscheidung auf "Es ist besser, zu Hause zu bleiben. Es gibt einen Sturmalarm." ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

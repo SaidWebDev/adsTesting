@@ -1,0 +1,8 @@
+{
+  "name": "Peter",
+  "wetter": {
+    "Regenvorhersage": 100,
+    "Temperatur": "kalt",
+    "Sturmalarm": true
+  }
+}

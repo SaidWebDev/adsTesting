@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Regel für Empfehlung</name>
+  <uuid>1cd464a7-ad08-4e82-8608-d50a61a834a7</uuid>
+  <locale>de_DE</locale>
+  <definition><![CDATA[wenn
+	Name ist definiert
+dann
+	setze Entscheidung auf "Hallo " + Name  + "! " + Wetterempfehlung ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

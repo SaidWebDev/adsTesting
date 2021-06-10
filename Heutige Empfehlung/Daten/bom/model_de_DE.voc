@@ -1,0 +1,34 @@
+
+# Term: Regenvorhersage
+@Regenvorhersage#gender = FEMALE
+
+# Term: Temperatur
+@Temperatur#gender = FEMALE
+@Temperatur#plural = Temperaturen
+
+# Term: Wetter
+@Wetter#gender = NEUTRAL
+
+# Temperatur
+Temperatur#concept.label = Temperatur
+Temperatur.heiß#instance.label = heiß
+Temperatur.kalt#instance.label = kalt
+Temperatur.warm#instance.label = warm
+
+# Wetter
+Wetter#concept.label = Wetter
+Wetter.Wetter(java.lang.Long,Temperatur,boolean)#phrase.navigation = ein neuer {Wetter} wobei {0, Regenvorhersage} {1, Temperatur} {2, Sturmalarm}
+Wetter.neuesAttribut#phrase.action = setze die Regenvorhersage von {this} auf {Regenvorhersage}
+Wetter.neuesAttribut#phrase.addition_setter = füge {Regenvorhersage} zu die Regenvorhersage von {this} hinzu
+Wetter.neuesAttribut#phrase.navigation = {Regenvorhersage} von {this}
+Wetter.neuesAttribut#phrase.subtraction_setter = ziehe {Regenvorhersage} von die Regenvorhersage von {this} ab
+Wetter.neuesAttribut1#phrase.action = setze die Temperatur von {this} auf {Temperatur}
+Wetter.neuesAttribut1#phrase.clearer = lösche die Temperatur von {this}
+Wetter.neuesAttribut1#phrase.navigation = {Temperatur} von {this}
+Wetter.sturmalarm#phrase.action[0] = {this} wird genau dann Sturmalarm wenn {Sturmalarm}
+Wetter.sturmalarm#phrase.action[1] = mache es {Sturmalarm} dass {this} ist Sturmalarm
+Wetter.sturmalarm#phrase.action[1].deprecated = true
+Wetter.sturmalarm#phrase.navigation = {this} ist Sturmalarm
+Wetter.sturmalarm#phrase.negative_predicate = {this} ist nicht Sturmalarm
+Wetter.sturmalarm#phrase.negative_predicate_setter = {this} wird nicht Sturmalarm
+Wetter.sturmalarm#phrase.positive_predicate_setter = {this} wird Sturmalarm
