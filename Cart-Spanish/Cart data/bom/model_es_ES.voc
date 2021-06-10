@@ -1,0 +1,40 @@
+
+# Term: elemento
+@elemento#gender = MALE
+
+# Term: nombre
+@nombre#gender = MALE
+
+# Term: precio
+@precio#gender = MALE
+
+# Canasta
+Canasta#concept.label = canasta
+Canasta.Canasta(java.util.List)#phrase.navigation = una nueva {canasta} en que {0, elemento}
+Canasta.addTo_elementos(Elemento)#phrase.action = agregar {0} en los elementos {this,PARTITIVE_ARTICLE}
+Canasta.clear_elementos()#phrase.action = vaciar los elementos {this,PARTITIVE_ARTICLE}
+Canasta.elementos#phrase.action = cambiar el elemento {this,PARTITIVE_ARTICLE} a {elemento}
+Canasta.elementos#phrase.navigation = {elemento} {this,PARTITIVE_ARTICLE}
+Canasta.removeFrom_elementos(Elemento)#phrase.action = quitar {0} de los elementos {this,PARTITIVE_ARTICLE}
+
+# Elemento
+Elemento#concept.documentation = 
+Elemento#concept.label = elemento
+Elemento.Elemento(double,java.lang.String,double)#phrase.navigation = un nuevo {elemento} en que {0, cantidad} {1, nombre} {2, precio}
+Elemento.cantidad#phrase.action = cambiar la cantidad {this,PARTITIVE_ARTICLE} a {cantidad}
+Elemento.cantidad#phrase.addition_setter = añadir {cantidad} a la cantidad {this,PARTITIVE_ARTICLE}
+Elemento.cantidad#phrase.navigation = {cantidad} {this,PARTITIVE_ARTICLE}
+Elemento.cantidad#phrase.subtraction_setter = sustraer {cantidad} de la cantidad {this,PARTITIVE_ARTICLE}
+Elemento.nombre#phrase.action = cambiar el nombre {this,PARTITIVE_ARTICLE} a {nombre}
+Elemento.nombre#phrase.navigation = {nombre} {this,PARTITIVE_ARTICLE}
+Elemento.precio#phrase.action = cambiar el precio {this,PARTITIVE_ARTICLE} a {precio}
+Elemento.precio#phrase.addition_setter = añadir {precio} a el precio {this,PARTITIVE_ARTICLE}
+Elemento.precio#phrase.navigation = {precio} {this,PARTITIVE_ARTICLE}
+Elemento.precio#phrase.subtraction_setter = sustraer {precio} de el precio {this,PARTITIVE_ARTICLE}
+
+# Sentimiento
+Sentimiento#concept.label = sentimiento
+Sentimiento.demasiadoCostoso#instance.label = demasiado costoso
+Sentimiento.loQueEsperaba#instance.label = lo que esperaba
+Sentimiento.malaCalidad#instance.label = mala calidad
+Sentimiento.vayaAOtraTienda#instance.label = vaya a otra tienda

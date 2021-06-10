@@ -1,0 +1,26 @@
+{
+  "misCompras": {
+    "elementos": [
+      {
+        "cantidad": 2,
+        "precio": 2.53,
+        "nombre": "mantequilla"
+      },
+      {
+        "cantidad": 4,
+        "nombre": "harina",
+        "precio": 1.12
+      },
+      {
+        "cantidad": 3,
+        "nombre": "huevos",
+        "precio": 2.99
+      },
+      {
+        "cantidad": 1,
+        "nombre": "leche",
+        "precio": 1.15
+      }
+    ]
+  }
+}

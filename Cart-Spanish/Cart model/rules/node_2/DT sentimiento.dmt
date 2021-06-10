@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>DT sentimiento</name>
+  <uuid>48d540a7-02e3-45b3-8a23-795c6607eb2e</uuid>
+  <locale>es_ES</locale>
+  <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+    <Body>
+        <Properties>
+            <Property Name="UI.MediaType"><![CDATA[Web]]></Property>
+            <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
+        </Properties>
+        <Structure>
+            <ConditionDefinitions>
+                <ConditionDefinition Id="C0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA['total' es mayor o igual que <min> y menor que <max>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+            </ConditionDefinitions>
+            <ActionDefinitions>
+                <ActionDefinition Id="A0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[asignar a 'decisión' <un sentimiento> ]]></Text>
+                    </ExpressionDefinition>
+                </ActionDefinition>
+            </ActionDefinitions>
+        </Structure>
+        <Contents>
+            <Partition DefId="C0">
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<un número> es menor o igual que <un número>]]></Text>
+                        <Param><![CDATA[5]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[mala calidad]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<un número> es mayor que <min> y menor o igual que <max>]]></Text>
+                        <Param><![CDATA[5]]></Param>
+                        <Param><![CDATA[10]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[lo que esperaba]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<un número> es mayor que <un número>]]></Text>
+                        <Param><![CDATA[10]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[demasiado costoso]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<un número> es mayor o igual que <un número>]]></Text>
+                        <Param><![CDATA[18]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[vaya a otra tienda]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+            </Partition>
+        </Contents>
+    </Body>
+    <Resources DefaultLocale="es_ES">
+        <ResourceSet Locale="es_ES">
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[total]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[306]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[una cadena de caracteres]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[sentimiento sobre las compras]]></Data>
+        </ResourceSet>
+    </Resources>
+</DT></definition>
+</ilog.rules.studio.model.dt:DecisionTable>

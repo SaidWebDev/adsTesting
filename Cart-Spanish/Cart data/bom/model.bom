@@ -1,0 +1,79 @@
+
+
+public class Canasta
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "canasta"
+        property "de.generated" "true"
+{
+    public java.util.List elementos domain 0,* class Elemento
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "elementos"
+                property update "true";
+    public Canasta(java.util.List elementos domain 0,* class Elemento)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Canasta()
+                property "dataio.default" "true";
+    public void addTo_elementos(Elemento elementos)
+                property collectionAttribute "elementos"
+                property update "true";
+    public void clear_elementos()
+                property collectionAttribute "elementos"
+                property update "true";
+    public void removeFrom_elementos(Elemento elementos)
+                property collectionAttribute "elementos"
+                property update "true";
+    public void set_elementos(java.util.Collection elementos domain 0,* class Elemento)
+                property collectionAttribute "elementos"
+                property update "true";
+}
+
+public class Elemento
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "elemento"
+        property "de.generated" "true"
+{
+    public double cantidad
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "cantidad"
+                property update "true";
+    public string nombre
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "nombre"
+                property update "true";
+    public double precio
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "precio"
+                property update "true";
+    public Elemento(double cantidad, string nombre, double precio)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Elemento()
+                property "dataio.default" "true";
+}
+
+public class Sentimiento
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "sentimiento"
+        property "de.generated" "true"
+{
+    domain {static demasiadoCostoso, static loQueEsperaba, static malaCalidad, static vayaAOtraTienda}
+    public static final readonly Sentimiento demasiadoCostoso
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "demasiado costoso";
+    public static final readonly Sentimiento loQueEsperaba
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "lo que esperaba";
+    public static final readonly Sentimiento malaCalidad
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "mala calidad";
+    public static final readonly Sentimiento vayaAOtraTienda
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vaya a otra tienda";
+}
+
