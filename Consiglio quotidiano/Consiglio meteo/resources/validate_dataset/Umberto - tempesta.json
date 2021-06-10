@@ -1,0 +1,8 @@
+{
+  "nome": "Umberto",
+  "meteo": {
+    "previsione di pioggia": 100,
+    "temperatura": "freddo",
+    "avviso di tempesta": true
+  }
+}

@@ -1,0 +1,46 @@
+
+
+public class Meteo
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "meteo"
+        property "de.generated" "true"
+{
+    public Temperatura nuovoAttributo
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "temperatura"
+                property update "true";
+    public boolean nuovoAttributo1
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "avviso di tempesta"
+                property update "true";
+    public java.lang.Long previsioneDiPioggia
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "previsione di pioggia"
+                property update "true";
+    public Meteo(boolean nuovoAttributo1, Temperatura nuovoAttributo, java.lang.Long previsioneDiPioggia)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Meteo()
+                property "dataio.default" "true";
+}
+
+public class Temperatura
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "temperatura"
+        property "de.generated" "true"
+{
+    domain {static caldo, static freddo, static moltoCaldo}
+    public static final readonly Temperatura caldo
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "caldo";
+    public static final readonly Temperatura freddo
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "freddo";
+    public static final readonly Temperatura moltoCaldo
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "molto caldo";
+}
+

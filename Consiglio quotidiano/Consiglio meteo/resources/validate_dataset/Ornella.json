@@ -1,0 +1,8 @@
+{
+  "nome": "Ornella",
+  "meteo": {
+    "previsione di pioggia": 90,
+    "avviso di tempesta": false,
+    "temperatura": "molto caldo"
+  }
+}

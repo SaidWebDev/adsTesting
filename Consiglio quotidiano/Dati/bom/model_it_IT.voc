@@ -1,0 +1,31 @@
+
+# Term: meteo
+@meteo#gender = FEMALE
+@meteo#plural = meteo
+
+# Term: previsione di pioggia
+@previsione\ di\ pioggia#gender = FEMALE
+
+# Meteo
+Meteo#concept.label = meteo
+Meteo.Meteo(boolean,Temperatura,java.lang.Long)#phrase.navigation = una nuova {meteo} dove {0, avviso di tempesta} {1, temperatura} {2, previsione di pioggia}
+Meteo.nuovoAttributo#phrase.action = cambia la temperatura {this,PARTITIVE_ARTICLE} a {temperatura}
+Meteo.nuovoAttributo#phrase.clearer = cancella la temperatura {this,PARTITIVE_ARTICLE}
+Meteo.nuovoAttributo#phrase.navigation = {temperatura} {this,PARTITIVE_ARTICLE}
+Meteo.nuovoAttributo1#phrase.action[0] = {this} verrà avviso di tempesta soltanto se {avviso di tempesta}
+Meteo.nuovoAttributo1#phrase.action[1] = cambia a {avviso di tempesta} il fatto che {this} è avviso di tempesta
+Meteo.nuovoAttributo1#phrase.action[1].deprecated = true
+Meteo.nuovoAttributo1#phrase.navigation = {this} è avviso di tempesta
+Meteo.nuovoAttributo1#phrase.negative_predicate = {this} non è avviso di tempesta
+Meteo.nuovoAttributo1#phrase.negative_predicate_setter = {this} non verrà avviso di tempesta
+Meteo.nuovoAttributo1#phrase.positive_predicate_setter = {this} verrà avviso di tempesta
+Meteo.previsioneDiPioggia#phrase.action = cambia la previsione di pioggia {this,PARTITIVE_ARTICLE} a {previsione di pioggia}
+Meteo.previsioneDiPioggia#phrase.addition_setter = aggiunge {previsione di pioggia} a la previsione di pioggia {this,PARTITIVE_ARTICLE}
+Meteo.previsioneDiPioggia#phrase.navigation = {previsione di pioggia} {this,PARTITIVE_ARTICLE}
+Meteo.previsioneDiPioggia#phrase.subtraction_setter = sostrae {previsione di pioggia} da la previsione di pioggia {this,PARTITIVE_ARTICLE}
+
+# Temperatura
+Temperatura#concept.label = temperatura
+Temperatura.caldo#instance.label = caldo
+Temperatura.freddo#instance.label = freddo
+Temperatura.moltoCaldo#instance.label = molto caldo
