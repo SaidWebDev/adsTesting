@@ -1,0 +1,45 @@
+
+
+public class PrévisionMétéorologique
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Prévision météorologique"
+        property "de.generated" "true"
+{
+    public boolean alerteTempête1
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Alerte tempête"
+                property update "true";
+    public java.lang.Long prévisionDesPrécipitations1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Prévision des précipitations"
+                property update "true";
+    public TempératureRessentie températureRessentie
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Température ressentie"
+                property update "true";
+    public PrévisionMétéorologique(boolean alerteTempête1, java.lang.Long prévisionDesPrécipitations1, TempératureRessentie températureRessentie)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public PrévisionMétéorologique()
+                property "dataio.default" "true";
+}
+
+public class TempératureRessentie
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Température ressentie"
+        property "de.generated" "true"
+{
+    domain {static agréable1, static chaud1, static froid1}
+    public static final readonly TempératureRessentie agréable1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Agréable";
+    public static final readonly TempératureRessentie chaud1
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Chaud";
+    public static final readonly TempératureRessentie froid1
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Froid";
+}
+

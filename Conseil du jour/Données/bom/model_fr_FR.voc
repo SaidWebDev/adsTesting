@@ -1,0 +1,31 @@
+
+# Term: Alerte tempête
+@Alerte\ tempête#gender = FEMALE
+
+# Term: Prévision des précipitations
+@Prévision\ des\ précipitations#gender = FEMALE
+
+# Term: Prévision météorologique
+@Prévision\ météorologique#gender = FEMALE
+@Prévision\ météorologique#plural = Prévisions météorologiques
+
+# Term: Température ressentie
+@Température\ ressentie#gender = FEMALE
+@Température\ ressentie#plural = Températures ressenties
+
+# PrévisionMétéorologique
+PrévisionMétéorologique#concept.label = Prévision météorologique
+PrévisionMétéorologique.PrévisionMétéorologique(boolean,java.lang.Long,TempératureRessentie)#phrase.navigation = une nouvelle {Prévision météorologique} tel que {0, Alerte tempête} {1, Prévision des précipitations} {2, Température ressentie}
+PrévisionMétéorologique.alerteTempête1#phrase.action = mettre à {Alerte tempête} que {this} est Alerte tempête
+PrévisionMétéorologique.alerteTempête1#phrase.navigation = {this} est Alerte tempête
+PrévisionMétéorologique.prévisionDesPrécipitations1#phrase.action = assigner la Prévision des précipitations {this,PARTITIVE_ARTICLE} à {Prévision des précipitations}
+PrévisionMétéorologique.prévisionDesPrécipitations1#phrase.navigation = {Prévision des précipitations} {this,PARTITIVE_ARTICLE}
+PrévisionMétéorologique.températureRessentie#phrase.action = assigner la Température ressentie {this,PARTITIVE_ARTICLE} à {Température ressentie}
+PrévisionMétéorologique.températureRessentie#phrase.clearer = effacer la Température ressentie {this,PARTITIVE_ARTICLE}
+PrévisionMétéorologique.températureRessentie#phrase.navigation = {Température ressentie} {this,PARTITIVE_ARTICLE}
+
+# TempératureRessentie
+TempératureRessentie#concept.label = Température ressentie
+TempératureRessentie.agréable1#instance.label = Agréable
+TempératureRessentie.chaud1#instance.label = Chaud
+TempératureRessentie.froid1#instance.label = Froid
