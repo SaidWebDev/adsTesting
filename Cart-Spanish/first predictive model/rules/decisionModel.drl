@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>firstPredictiveModel</name>
+  <uuid>a002500f-c1bb-4fe9-9260-c3a566dddce3</uuid>
+  <locale>es_ES</locale>
+  <definition><![CDATA[asignar a decisión predict( 'Correlación de entrada' ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,25 @@
+
+# decisions.spanish.cart_spanish.firstPredictiveModel.Error
+decisions.spanish.cart_spanish.firstPredictiveModel.Error#concept.label = Output error
+decisions.spanish.cart_spanish.firstPredictiveModel.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = un nuevo {Output error} en que {0, code} {1, message} 
+decisions.spanish.cart_spanish.firstPredictiveModel.Error.code#phrase.action = cambiar el code {this,PARTITIVE_ARTICLE} a {code}
+decisions.spanish.cart_spanish.firstPredictiveModel.Error.code#phrase.navigation = {code} {this,PARTITIVE_ARTICLE}
+decisions.spanish.cart_spanish.firstPredictiveModel.Error.message#phrase.action = cambiar el message {this,PARTITIVE_ARTICLE} a {message}
+decisions.spanish.cart_spanish.firstPredictiveModel.Error.message#phrase.navigation = {message} {this,PARTITIVE_ARTICLE}
+
+# decisions.spanish.cart_spanish.firstPredictiveModel.Input
+decisions.spanish.cart_spanish.firstPredictiveModel.Input#concept.label = ML model input
+decisions.spanish.cart_spanish.firstPredictiveModel.Input.Input(java.lang.String)#phrase.navigation = un nuevo {ML model input} en que {0, input} 
+decisions.spanish.cart_spanish.firstPredictiveModel.Input.input#phrase.action = cambiar el input {this,PARTITIVE_ARTICLE} a {input}
+decisions.spanish.cart_spanish.firstPredictiveModel.Input.input#phrase.navigation = {input} {this,PARTITIVE_ARTICLE}
+
+# decisions.spanish.cart_spanish.firstPredictiveModel.Output
+decisions.spanish.cart_spanish.firstPredictiveModel.Output#concept.label = ML model output
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.Output(java.lang.String)#phrase.navigation = un nuevo {ML model output} en que {0, output} 
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.error#phrase.action = cambiar el error {this,PARTITIVE_ARTICLE} a {error}
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.error#phrase.clearer = borrar el error {this,PARTITIVE_ARTICLE}
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.error#phrase.navigation = {error} {this,PARTITIVE_ARTICLE}
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.inError()#phrase.navigation = {this} es in error
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.output#phrase.action = cambiar el output {this,PARTITIVE_ARTICLE} a {output}
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.output#phrase.navigation = {output} {this,PARTITIVE_ARTICLE}
+decisions.spanish.cart_spanish.firstPredictiveModel.Output.run(decisions.spanish.cart_spanish.firstPredictiveModel.Input)#phrase.navigation = predict({0})
